@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div Disappear on Click</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            line-height: 150px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #div1 { background-color: #e74c3c; }
+        #div2 { background-color: #3498db; }
+        #div3 { background-color: #2ecc71; }
+        #div4 { background-color: #f1c40f; color: black; }
+    </style>
+</head>
+<body>
+
+<h2>Click on any box to make it disappear 👇</h2>
+
+<div id="div1" class="box">Div 1</div>
+<div id="div2" class="box">Div 2</div>
+<div id="div3" class="box">Div 3</div>
+<div id="div4" class="box">Div 4</div>
+
+<script>
+    $(document).ready(function(){
+        $(".box").click(function(){
+            $(this).fadeOut();
+        });
+    });
+</script>
+
+</body>
+</html>

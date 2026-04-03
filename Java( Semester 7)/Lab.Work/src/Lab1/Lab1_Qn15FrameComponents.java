@@ -1,4 +1,4 @@
-package lab1;
+package Lab1;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

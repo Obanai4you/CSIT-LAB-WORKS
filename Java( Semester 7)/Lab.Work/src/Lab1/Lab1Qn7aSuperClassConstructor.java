@@ -15,7 +15,7 @@ class Child extends Parent {
 }
 public class Lab1Qn7aSuperClassConstructor {
      public static void main(String[] args) {
-        Child c = new Child();
+        Child c =new Child();
 
         // Footer
         System.out.println("\nLab1, Priyanshu Shrestha,23081040");

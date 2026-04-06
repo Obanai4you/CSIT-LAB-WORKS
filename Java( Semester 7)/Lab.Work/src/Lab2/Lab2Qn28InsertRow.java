@@ -17,7 +17,7 @@ public class Lab2Qn28InsertRow {
 
             con.close();
 
-            System.out.println("Lab3, Priyanshu Shrestha, 23081040");
+            System.out.println("Lab2, Priyanshu Shrestha, 23081040");
 
         } catch(Exception e){ e.printStackTrace(); }
     }

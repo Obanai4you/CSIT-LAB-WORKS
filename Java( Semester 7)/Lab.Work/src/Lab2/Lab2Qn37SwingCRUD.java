@@ -179,6 +179,6 @@ public class Lab2Qn37SwingCRUD {
         f.setLayout(null);
         f.setVisible(true);
 
-        System.out.println("Lab3, Priyanshu Shrestha, 23081040");
+        System.out.println("Lab2,Priyanshu Shrestha, 23081040");
     }
 }

@@ -1,0 +1,2 @@
+Lab1.MyException
+Lab1.Lab1_Qn12fCustomException

@@ -54,7 +54,7 @@ public class Lab2Qn32InsertFromConsole {
             // Close connection
             con.close();
 
-            System.out.println("\nLab3, Priyanshu Shrestha, 23081040");
+            System.out.println("\nLab2,Priyanshu Shrestha, 23081040");
 
         } catch (Exception e) {
             e.printStackTrace();

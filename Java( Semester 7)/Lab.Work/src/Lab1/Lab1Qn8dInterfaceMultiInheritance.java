@@ -1,26 +1,26 @@
 package Lab1;
 
 // Interface 1
-interface Engine {
-    void startEngine();
+interface Flyable {
+    void fly();
 }
 
 // Interface 2
-interface Horn {
-    void blowHorn();
+interface Swimmable {
+    void swim();
 }
 
 // Class implementing multiple interfaces
-class Car implements Engine, Horn {
+class Duck implements Flyable, Swimmable {
 
     @Override
-    public void startEngine() {
-        System.out.println("Engine started!");
+    public void fly() {
+        System.out.println("Duck is flying!");
     }
 
     @Override
-    public void blowHorn() {
-        System.out.println("Horn is blowing!");
+    public void swim() {
+        System.out.println("Duck is swimming!");
     }
 }
 
@@ -28,11 +28,11 @@ class Car implements Engine, Horn {
 public class Lab1Qn8dInterfaceMultiInheritance {
     public static void main(String[] args) {
 
-        Car myCar = new Car();
+        Duck d = new Duck();
 
-        myCar.startEngine();
-        myCar.blowHorn();
+        d.fly();
+        d.swim();
 
-        System.out.println("\nLab1, Priyanshu Shrestha, 23081040");
+         System.out.println("\nLab1, Priyanshu Shrestha, 23081040");
     }
 }

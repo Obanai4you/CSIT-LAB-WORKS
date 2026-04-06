@@ -69,7 +69,7 @@ public class Lab2Qn35RowSetDemo {
             System.out.println("Final student table after CachedRowSet update:");
             displayStudentTable(url, user, pass);
 
-            System.out.println("\nLab3, Priyanshu Shrestha, 23081040");
+            System.out.println("\nLab2, Priyanshu Shrestha, 23081040");
 
         } catch(Exception e){
             e.printStackTrace();

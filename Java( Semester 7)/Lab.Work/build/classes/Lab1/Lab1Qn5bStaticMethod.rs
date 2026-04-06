@@ -1,0 +1,2 @@
+Lab1.Lab1Qn5bStaticMethod
+Lab1.StaticMethodDemo

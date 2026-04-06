@@ -1,6 +1,6 @@
 package Lab1;
 
-public class Lab1_Qn13gThreadPrint extends Thread {
+public class Lab1_Qn13hThreadPrint extends Thread {
 
     @Override
     public void run() {
@@ -16,7 +16,7 @@ public class Lab1_Qn13gThreadPrint extends Thread {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Lab1_Qn13gThreadPrint t = new Lab1_Qn13gThreadPrint();
+        Lab1_Qn13hThreadPrint t = new Lab1_Qn13hThreadPrint();
 
         t.start();   // start thread
         t.join();    // wait until thread finishes

@@ -2,7 +2,7 @@ package Lab2;
 
 import java.sql.*;
 
-public class q36TransactionDemo {
+public class Lab2Qn36TransactionDemo {
     public static void main(String[] args) {
 
         try {
@@ -26,7 +26,7 @@ public class q36TransactionDemo {
 
             // Close connection
             con.close();
-            System.out.println("Lab3, Priyanshu Shrestha, 23081040");
+            System.out.println("Lab2, Priyanshu Shrestha, 23081040");
 
         } catch(Exception e){
             e.printStackTrace();

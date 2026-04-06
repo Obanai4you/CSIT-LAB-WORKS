@@ -1,0 +1,3 @@
+Lab1.OuterStatic
+Lab1.Lab1Qn9aStaticNestedClass
+Lab1.OuterStatic$StaticNested

@@ -1,0 +1,8 @@
+Lab1.Lab1Qn8aMethodOverriding
+Lab1.Figure
+Lab1Qn8aMethodOverriding
+Rectangle
+Triangle
+Lab1.Rectangle
+Lab1.Triangle
+Figure

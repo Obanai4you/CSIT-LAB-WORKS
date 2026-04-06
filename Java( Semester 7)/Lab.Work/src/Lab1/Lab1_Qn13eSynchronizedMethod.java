@@ -1,41 +1,45 @@
 package Lab1;
 
-class Table {
-    synchronized void print(int n) {
+// Shared resource class
+class TableSync {
+    synchronized void printTable(int n) {
         for (int i = 1; i <= 5; i++) {
-            System.out.println(n * i);
+            System.out.println(Thread.currentThread().getName() + " : " + (n * i));
         }
     }
 }
 
-class MyThread extends Thread {
-    Table t;
-    int num;
+// Thread class (renamed to avoid conflicts)
+class TableThreadDemo extends Thread {
+    TableSync table;
+    int number;
 
-    MyThread(Table t, int num) {
-        this.t = t;
-        this.num = num;
+    TableThreadDemo(TableSync table, int number) {
+        this.table = table;
+        this.number = number;
     }
 
     @Override
     public void run() {
-        t.print(num);
+        table.printTable(number);
     }
 }
 
+// Main class
 public class Lab1_Qn13eSynchronizedMethod {
-     public static void main(String[] args) throws InterruptedException {
-        Table t = new Table();
+    public static void main(String[] args) throws InterruptedException {
 
-        MyThread t1 = new MyThread(t, 5);
-        MyThread t2 = new MyThread(t, 10);
+        TableSync table = new TableSync();
+
+        TableThreadDemo t1 = new TableThreadDemo(table, 5);
+        TableThreadDemo t2 = new TableThreadDemo(table, 10);
 
         t1.start();
         t2.start();
 
         t1.join();
         t2.join();
-        
-        System.out.println("\nLab1,Priyanshu Shrestha,23081040");
+
+        System.out.println("\nLab1, Priyanshu Shrestha, 23081040");
     }
 }
